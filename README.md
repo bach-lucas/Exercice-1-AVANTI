@@ -38,6 +38,12 @@ Plataforma de e-commerce empresarial desenvolvida com arquitetura moderna para d
 - Bootstrap Icons
 - Google Fonts
 
+### Como instalar e visualizar
+- Baixe em ZIP
+- Caso precise instalar algo, abra o vscode e escreva no bash: npm install
+- Baixe a extensão live code para visualizar.
+
+
 ---
 
 ## Arquitetura do Sistema
