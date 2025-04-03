@@ -1,7 +1,5 @@
 # Avanti E-commerce Platform
 
-![Avanti Platform Screenshot](./preview.jpg) <!-- Adicione uma imagem real do projeto -->
-
 Plataforma de e-commerce empresarial desenvolvida com arquitetura moderna para demonstração de competências em desenvolvimento front-end de alto nível.
 
 ---
@@ -42,6 +40,7 @@ Plataforma de e-commerce empresarial desenvolvida com arquitetura moderna para d
 - Baixe em ZIP
 - Caso precise instalar algo, abra o vscode e escreva no bash: npm install
 - Baixe a extensão live code para visualizar.
+- Se houver algum erro e você precise de ajuda, pode me chamar no email: lucass.unzer@gmail.com
 
 
 ---
