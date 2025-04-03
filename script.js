@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     // Search functionality
     const searchButton = document.getElementById('searchButton');
@@ -27,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize product carousel
     const products = [
         {
-            image: 'https://images.unsplash.com/photo-1523381294911-8d3cead13475?w=300',
+            image: 'https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=300',
             name: 'Camiseta Casual Masculina',
             price: 129.90,
             oldPrice: 149.00
@@ -39,19 +38,19 @@ document.addEventListener('DOMContentLoaded', function() {
             oldPrice: 249.00
         },
         {
-            image: 'https://placehold.co/300x300/ff9800/white?text=Product+3',
+            image: 'https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=300',
             name: 'Wireless Headphones',
             price: 299.90,
             oldPrice: 399.00
         },
         {
-            image: 'https://placehold.co/300x300/9c27b0/white?text=Product+4',
+            image: 'https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=300',
             name: 'Gaming Console Pro',
             price: 2499.90,
             oldPrice: 2999.00
         },
         {
-            image: 'https://placehold.co/300x300/f44336/white?text=Product+5',
+            image: 'https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=300',
             name: 'Ultra HD Camera',
             price: 1899.90,
             oldPrice: 2199.00
