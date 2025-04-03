@@ -14,7 +14,7 @@
 <header class="header">
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">AVANTI</a>
+            <a class="navbar-brand" href="https://penseavanti.com.br">AVANTI</a>
             <div class="search-box">
                 <input type="text" id="searchInput" placeholder="Digite aqui o que você procura">
                 <div id="searchResult" class="container mt-3"></div>
@@ -28,13 +28,15 @@
     </nav>
     <nav class="categories-nav">
         <div class="container">
-            <button class="categories-btn">Todas as Categorias</button>
-            <div class="departments">
-                <a href="#">Departamento</a>
-                <a href="#">Contato</a>
-                <a href="#">Compras</a>
-                <a href="#">Camisas</a>
-                <a href="#">Clientes</a>
+            <div class="all-categories">
+                <button class="categories-btn">Todas as Categorias</button>
+                <div class="departments">
+                    <a href="#">Departamento</a>
+                    <a href="#">Contato</a>
+                    <a href="#">Compras</a>
+                    <a href="#">Camisas</a>
+                    <a href="#">Clientes</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -51,10 +53,17 @@
         </div>
     </section>
 
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
     <section class="products container">
         <div class="section-header">
-            <h2>Lançamentos</h2>
-            <a href="#" class="see-more">Ver mais</a>
+            <h2 class="section-title">Lançamentos</h2>
+            <a href="#" class="see-more">
+                Ver mais
+                <i class="fas fa-arrow-right"></i>
+            </a>
         </div>
         <div class="product-carousel">
             <!-- Products will be added dynamically -->
@@ -148,7 +157,7 @@
                     <div class="footer-col">
                         <h4>Institucional</h4>
                         <ul>
-                            <li><a href="#">Sobre Nós</a></li>
+                            <li><a href="https://penseavanti.com.br/quem-somos/">Sobre Nós</a></li>
                             <li><a href="#">Nossas Lojas</a></li>
                             <li><a href="#">Privacidade e Segurança</a></li>
                             <li><a href="#">Termos e Condições</a></li>
@@ -168,7 +177,7 @@
                         <h4>Atendimento</h4>
                         <ul>
                             <li>Telefone: (00) 1234-5678</li>
-                            <li>E-mail: exemplo@exemplo.com.br</li>
+                            <li>E-mail: contato@penseavanti.com.br</li>
                             <li class="horario">Segunda a Sábado: 07h00 às 19h00</li>
                             <li class="horario">Domingos e Feriados: 07h00 às 18h00</li>
                         </ul>
@@ -187,12 +196,17 @@
             <div class="container">
                 <p class="copyright">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                     euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                <div class="security-seals">
-                    <img src="https://placehold.co/40x40/666/fff?text=Seal" alt="PCI">
-                    <img src="https://placehold.co/40x40/666/fff?text=Seal" alt="SSL">
-                    <img src="https://placehold.co/80x40/666/fff?text=AVANTI" alt="Avanti">
-                    <img src="https://placehold.co/40x40/666/fff?text=Seal" alt="VTEX">
-                </div>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/penseavanti/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@penseavanti/videos" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/penseavanti/?originalSubdomain=br" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
             </div>
         </div>
     </footer>

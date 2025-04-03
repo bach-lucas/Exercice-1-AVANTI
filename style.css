@@ -14,6 +14,142 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.categories-nav {
+    background: var(--primary);
+    padding: 0.8rem 0;
+    text-align: center; /* Centraliza todo o conteúdo */
+    justify-content: center;
+}
+
+.all-categories {
+    display: inline-flex; /* Mantém os itens em linha mas centralizados */
+    align-items: center;
+    gap: 2rem;
+}
+
+.departments {
+    display: flex;
+    gap: 2rem;
+}
+
+.categories-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.categories-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.departments a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.departments a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+}
+
+.departments a:hover:after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .all-categories {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .departments {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.progress-container {
+    width: 100%;
+    height: 5px;
+    background: #f0f0f0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #0066ff;
+    width: 0%;
+    transition: width 0.1s ease-out;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #0066ff;
+}
+
+.see-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #0066ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.see-more:hover {
+    color: #0047b3;
+    transform: translateX(5px);
+}
+
+.see-more i {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.see-more:hover i {
+    transform: translateX(3px);
+}
+
 .cart-link {
     display: flex;
     align-items: center;
