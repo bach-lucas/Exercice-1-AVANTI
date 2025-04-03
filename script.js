@@ -100,3 +100,108 @@ window.addEventListener('scroll', function() {
     const scrolled = (winScroll / height) * 100;
     document.getElementById("progressBar").style.width = scrolled + "%";
 }); //Barra de enchimento
+
+// Easter Egg - Versão Simplificada
+let clickCount = 0;
+let lastClickTime = 0;
+
+document.querySelector('.egg').addEventListener('click', (e) => {
+    const currentTime = new Date().getTime();
+    
+    // Reset count se passar mais de 1 segundo entre os cliques
+    if (currentTime - lastClickTime > 1000) {
+        clickCount = 0;
+    }
+
+    clickCount++;
+    lastClickTime = currentTime;
+
+    if (clickCount === 5) {
+        showEasterEgg();
+        clickCount = 0;
+    }
+});
+
+function showEasterEgg() {
+    // Criar modal
+    const egg = document.createElement('div');
+    egg.className = 'easter-egg';
+    egg.innerHTML = `
+        <div class="easter-content">
+            <h3>🎉 Parabéns!!</h3>
+            <p>Você encontrou um dos melhores estagiários candidatos!!</p>
+            <p>Agora dê uma chance para ele, pois ele irá mudar o seu jeito de ver as coisas!</p>
+            <p>Caso você tenha encontrado, me chame no whatsapp que irei fazer um pix de 5 reais hehe</p>
+            <button class="close-egg">Fechar</button>
+        </div>
+    `;
+
+    // Adicionar ao body
+    document.body.appendChild(egg);
+
+    // Fechar modal
+    egg.querySelector('.close-egg').addEventListener('click', () => {
+        egg.remove();
+    });
+}
+
+// Adicionar CSS
+const eggStyle = document.createElement('style');
+eggStyle.textContent = `
+    .easter-egg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        animation: eggFadeIn 0.5s;
+    }
+
+    .easter-content {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 500px;
+        box-shadow: 0 0 20px rgba(0,102,255,0.5);
+    }
+
+    .easter-content h3 {
+        color: #0066FF;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .easter-content p {
+        font-size: 1.1rem;
+        margin: 1rem 0;
+        color: #333;
+    }
+
+    .close-egg {
+        background: #0066FF;
+        color: white;
+        border: none;
+        padding: 0.8rem 2rem;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        margin-top: 1rem;
+        transition: transform 0.3s;
+    }
+
+    .close-egg:hover {
+        transform: scale(1.05);
+    }
+
+    @keyframes eggFadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+`;
+document.head.appendChild(eggStyle);
